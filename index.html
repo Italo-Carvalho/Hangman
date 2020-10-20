@@ -1,0 +1,43 @@
+<head>
+  <title>Hangman</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Krona+One&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="ico.ico" />
+</head>
+
+
+
+<body>
+  <div style="position: absolute;background-image: url(cest-branco.png);width: 130px; height: 95px; background-size: contain; background-repeat:no-repeat; top: 10; left: 15px;">
+  </div>
+  <div class="wrapper">
+    <h1 style="
+    font-family: 'Archivo Black';
+    font-size: 56px;
+    text-transform: uppercase;
+  /* Warning: no fallback */
+  
+  background: -webkit-linear-gradient(-86deg, #EEF85B 5%, #7AEC8D 53%, #09E5C3 91%);
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 4px transparent;
+  color: #005183;">HANGMAN</h1>
+    <p>Use o alfabeto abaixo para adivinhar a palavra<br> ou clique na <strong>dica</strong> para obter uma pista.</p>
+  </div>
+  <div class="wrapper">
+    <div id="buttons">
+    </div>
+    <p id="catagoryName"></p>
+    <div id="hold">
+    </div>
+    <p id="mylives"></p>
+    <p id="clue">Dica: </p>
+    <canvas id="stickman"></canvas>
+    <div class="container">
+      <button id="hint">Dica</button>
+
+      <button id="reset" onclick="location.reload()">Play again</button>
+    </div>
+  </div>
+  <script src="code.js"></script>
+
+</body>
